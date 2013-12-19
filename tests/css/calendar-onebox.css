@@ -1,0 +1,162 @@
+.ui-calendar {
+		width: 100%;
+		height: 264px;
+		line-height: 25px;
+		font-size: 14px;
+		border:1px solid #d8d8d8;
+		box-sizing:border-box;
+		margin-top: -1px;
+	}
+.ui-calendar-header {
+		height: 30px;
+		line-height: 30px;
+		border-bottom: 1px solid #d8d8d8;
+		background-color: #fafafa;
+		display: -webkit-box;
+		display: -moz-box;
+		display: box;
+	}
+
+.ui-calendar-header a {
+		display: block;
+		width: 11.76%;
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-size: 7px 10px;
+		text-align: center;
+		overflow: hidden;
+		text-indent: -999em;
+	}
+.ui-calendar-prev{
+		border-right: 1px solid #ccc;
+		background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAATCAMAAACX3symAAAAe1BMVEXCw8XCw8XCw8XCw8XCw8XCw8XCw8XCw8XCw8XCw8XCw8XCw8XCw8XCw8XCw8XCw8XCw8XCw8XCw8XCw8XCw8XCw8XCw8XCw8XCw8XCw8XCw8XCw8XCw8XCw8XCw8XCw8XCw8XCw8XCw8XCw8XCw8XCw8XCw8XCw8XCw8UKmtdmAAAAKHRSTlMAbzxs9kJgSFr8yQZRzBL5P8YPOfPDDDPw2xgJvbexZqsDcqJ+jbqZVvh+DwAAAHVJREFUGNNNz0sWgjAMBdAKlV8VBCmCVUBFyf5XKGlOSt7sDpKXKMU5REokBn3clQCATllZvhEKQzp5nUtSWkldNKpuSNcWZTvSrZcyA0rfuSPyk9axae8jmFqfJtyEhDF48p5f7Lf3J3iR5Vu+AD8n/l9x1R9L/A6x8hsJ8wAAAABJRU5ErkJggg==);
+	}
+.ui-calendar-next{
+		border-left: 1px solid #ccc;
+		background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAATCAMAAACX3symAAAAe1BMVEXCw8XCw8XCw8XCw8XCw8XCw8XCw8XCw8XCw8XCw8XCw8XCw8XCw8XCw8XCw8XCw8XCw8XCw8XCw8XCw8XCw8XCw8XCw8XCw8XCw8XCw8XCw8XCw8XCw8XCw8XCw8XCw8XCw8XCw8XCw8XCw8XCw8XCw8XCw8XCw8XCw8UKmtdmAAAAKHRSTlMABrGZCbqNDMN+A6Jyq2Zat/xRvflI9jwY2/Az8zkPxj8SzMlgQmxvm1QJAAAAAHJJREFUGNNNz0cWgkAQBcDBiFlUBnMOdf8TuuAx0Kuuzf/dIYSs1w/tDIaMksY5TBpOZ2CevADLxlkPrJLXUGxS+BZ2ZXIOsWq8j3DIuuXHU1fnS63rDeK91uPZza3VtGYvKNJNZcS7ffgTfTv/h+qX1j/cEQ6m/CIoWQAAAABJRU5ErkJggg==);
+	}
+.ui-calendar-header a.ui-state-hover {
+		background-color: #ccc;
+	}
+.ui-calendar-header .ui-calendar-title {
+		display: block;
+		-webkit-box-flex: 1.0;
+		-moz-box-flex: 1.0;
+		box-flex: 1.0;
+		text-align: center;
+		font-size: 13px;
+		color: #333;
+	}
+.ui-calendar-calendar {
+		width: 100%;
+		border-collapse: collapse;
+	}
+.ui-calendar-calendar th, 
+.ui-calendar-calendar td {
+		text-align: center;
+		color: #666;
+		background: #fff;
+		font-weight: normal;
+		height: 29px;
+		line-height: 29px;
+		border-left: 10px solid #fff;
+	}
+.ui-calendar-calendar tr th:first-child,
+.ui-calendar-calendar tr td:first-child{
+		border-left-width:5px;
+	}
+.ui-calendar-calendar tr th:last-child,
+.ui-calendar-calendar tr td:last-child{
+		border-right:5px solid #fff;
+	}
+.ui-calendar-calendar td{
+		border-bottom:4px solid #fff;
+	}
+.ui-calendar-calendar thead th {
+		height: 31px;
+		line-height: 31px;
+		font-size: 12px;
+	}
+.ui-calendar-calendar th:first-child span,
+.ui-calendar-calendar th:last-child span{
+		color: #5cb642;
+	}
+.ui-calendar-gap{
+		display: none;
+	}
+.ui-calendar-calendar a,
+.ui-calendar-calendar span {
+		text-decoration: none;
+		color:#000;
+		display: block;
+		font-size: 12px;
+	}
+
+.ui-calendar-calendar tr.ui-calendar-gap td {
+		line-height: 5px;
+		font-size: 0;
+		border: none;
+		background: transparent;
+	}
+
+.ui-calendar-calendar .ui-calendar-unSelectable span{
+		color: #c8c8c8;
+	}
+
+.ui-calendar-calendar .ui-calendar-today {
+		background: #f0f0f0;
+	}
+.ui-calendar-calendar .ui-calendar-current-day {
+		background: #5cb642;
+	}
+.ui-calendar-calendar .ui-calendar-current-day a{
+		color: #fff;
+	}
+
+.ui-calendar-calendar td.ui-state-hover {
+		background: #ccc;
+	}
+
+.ui-slideup .header {
+		line-height: 43px;
+		height: 43px;
+		border-top: 1px solid black;
+		border-bottom: 1px solid black;
+		opacity: 0.9;
+		background: url(./calendar-header.png) repeat-x;
+		overflow: hidden;
+	}
+.ui-slideup .ok-btn,
+.ui-slideup .no-btn {
+		position: absolute;
+		top: 7px;
+		height: 20px;
+		line-height: 20px;
+		padding: 0 5px;
+		margin: 0;
+		border-width: 5px;
+		font-size: 12px;
+		font-weight: bold;
+		text-shadow: rgba(0, 0, 0, 0.8) 0 -1px 0;
+		color: white;
+		text-decoration: none;
+		display: block;
+	}
+.ui-slideup .ok-btn {
+		right: 7px;
+		float: right;
+		-webkit-border-image: url(done.png) 5;
+	}
+.ui-slideup .no-btn {
+		left: 7px;
+		float: left;
+		-webkit-border-image: url(cancel.png) 5;
+	}
+.ui-slideup .ok-btn .ui-state-hover,
+.ui-slideup .no-btn .ui-state-hover{
+		opacity: 0.4;
+	}
+.ui-slideup .frame {
+		background: #e1e1e1;
+		padding: 5px;
+	}
