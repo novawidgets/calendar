@@ -1,0 +1,15 @@
+{
+    "calendar": {
+        "version": "1.0.0",
+        "files" : {
+            "build/calendar.js" : [
+                "src/calendar.js"
+            ]
+        },
+        "module": "Nova.calendar",
+        "src": "src/calendar.js",
+        "requires": {
+            "widget": "widget/1.0.0/widget"
+        }
+    }
+}

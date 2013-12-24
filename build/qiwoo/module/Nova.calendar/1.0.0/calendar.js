@@ -1,4 +1,8 @@
-(function() {
+(function(define, global) { 
+define(['module/widget/1.0.0/widget'], function(Widget) {
+Widget = Widget || this.Widget;
+
+
     var monthNames = ["01月", "02月", "03月", "04月", "05月", "06月",
         "07月", "08月", "09月", "10月", "11月", "12月"],
 
@@ -494,5 +498,6 @@
      * @description 组件在销毁的时候触发
      */
 
-     this.Calendar = Calendar;
-})();
+     return Calendar;
+}); 
+}) ( typeof define === 'function' && define.amd ? define : function (name, requires, factory) { if(typeof name === 'function') { factory = name; } else if(typeof requires === 'function') { factory = requires; } if(typeof module != 'undefined'){ module.exports = factory(require); }else if(typeof window != 'undefined'){ window.Calendar= factory(); } }, this);
