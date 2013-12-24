@@ -30,7 +30,7 @@
 
         prototype;
 
-    this.Calendar = Widget.extend({
+    var Calendar = Widget.extend({
         attrs: {
             _drawDate: null,
             /**
@@ -493,4 +493,6 @@
      * @param {Event} e Event对象
      * @description 组件在销毁的时候触发
      */
+
+     this.Calendar = Calendar;
 })($);
