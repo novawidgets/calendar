@@ -21,21 +21,10 @@
 ##事件
 
 | 事件名 | 描述 | 参数说明 |
-
+| ---- | ---- | ---- | 
 | ready | 当组件初始化完后触发。 | e {Event}Event对象 |
-
-| select | 选中日期的时候触发 | 
-e {Event}Event对象
-date {Date}当前选中的日期
-dateStr {String}当前选中日期的格式化字符串
-instance {Instance}当前日历的实例 |
-
-| monthchange | 当前显示月份发生变化时触发 | 
-e {Event}Event对象
-month {Date}当前月份
-year {String}当前年份
-instance {Instance}当前日历的实例 |
-
+| select | 选中日期的时候触发 | e {Event}Event对象 <br> date {Date}当前选中的日期 <br> dateStr {String}当前选中日期的格式化字符串 <br> instance {Instance}当前日历的实例 |
+| monthchange | 当前显示月份发生变化时触发 | e {Event}Event对象 <br> month {Date}当前月份 <br> year {String}当前年份 <br> instance {Instance}当前日历的实例 |
 | destroy | 组件在销毁的时候触发 | e {Event}Event对象 |
 
 ##方法
