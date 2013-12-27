@@ -243,7 +243,7 @@
 		},
 
 		/**
-		 * 刷新日历，当修改option后需要调用此方法
+		 * 刷新日历，当修改attr后需要调用此方法
 		 * @method refresh
 		 * @return {self} 返回本身
 		 */
@@ -443,7 +443,7 @@
 	 */
 
 	/**
-	 * 设置或获取当前选中的日期，如果想要Option生效需要调用[Refresh](#calendar_refresh)方法
+	 * 设置或获取当前选中的日期，如果想要设置生效需要调用[Refresh](#calendar_refresh)方法
 	 * @method selectedDate
 	 * @param {String|Date} value 当前日期
 	 * @return {self} 返回本身
@@ -515,7 +515,7 @@
 	 * @param {Date} month 当前月份
 	 * @param {String} year 当前年份
 	 * @param {Instance} instance 当前日历的实例
-	 * @description 前现实月份发生变化时触发
+	 * @description 当前显示月份发生变化时触发
 	 */
 	
 	/**
