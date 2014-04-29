@@ -175,7 +175,7 @@
 						this.set('selectedDate',
 						date = new Date(cell.attr('data-year'), cell.attr('data-month'), match.text()));
 
-						this.trigger('select', [date, $.calendar.formatDate(date), this]);
+						this.trigger('select', [date, $.calendar.formatDate(date)]);
 						this.refresh();
 					} else if ((match = $(target).closest('.ui-calendar-prev, .ui-calendar-next', root)) && match.length) {
 
@@ -232,7 +232,7 @@
 			year = tmpDate.getFullYear();
 
 			if (month != _drawDate.month || year != _drawDate.year) {
-				this.trigger('monthchange', [month, year, this]);
+				this.trigger('monthchange', [month, year]);
 
 				this.set('_drawDate', {month: month, year: year});
 
@@ -505,7 +505,6 @@
 	 * @param {Event} e Event对象
 	 * @param {Date} date 当前选中的日期
 	 * @param {String} dateStr 当前选中日期的格式化字符串
-	 * @param {Instance} instance 当前日历的实例
 	 * @description 选中日期的时候触发
 	 */
 	
@@ -514,7 +513,6 @@
 	 * @param {Event} e Event对象
 	 * @param {Date} month 当前月份
 	 * @param {String} year 当前年份
-	 * @param {Instance} instance 当前日历的实例
 	 * @description 当前显示月份发生变化时触发
 	 */
 	
