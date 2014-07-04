@@ -490,7 +490,7 @@
 
 		return function( $els, className ){
 			$els.on( 'touchstart.hl', function( e ) {
-				var $el = $(this);
+				$el = $(this);
 				$el.attr( 'hl-cls', className );
 				timer = setTimeout( function() {
 					$el.addClass( className );
