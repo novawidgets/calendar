@@ -356,7 +356,7 @@
 				max;
 
 			html += '<a class="ui-calendar-prev' + (minDate && minDate > lpd ?
-				' ui-state-disable' : '') + '" href="#">&lt;&lt;</a><div class="ui-calendar-title">';
+				' ui-state-disable' : '') + '" href="#"></a><div class="ui-calendar-title">';
 
 			if (data.yearChangeable) {
 				html += '<select class="ui-calendar-year">';
@@ -383,7 +383,7 @@
 			}
 
 			html += '</div><a class="ui-calendar-next' + (maxDate && maxDate < fnd ?
-				' ui-state-disable' : '') + '" href="#">&gt;&gt;</a></div>';
+				' ui-state-disable' : '') + '" href="#"></a></div>';
 			return html;
 		},
 
