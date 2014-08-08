@@ -182,7 +182,7 @@
 					} else if ((match = $(target).closest('.ui-calendar-prev, .ui-calendar-next', root)) && match.length) {
 
 						e.preventDefault();
-						e.stopPropagation(); // 点击后日历重建，改元素被删除，冒泡无意义。
+						e.stopPropagation(); // 点击后日历重建，该元素被删除，冒泡无意义。
 
 						this.switchMonthTo((match.is('.ui-calendar-prev') ? '-' : '+') + '1M');
 					}
@@ -494,6 +494,7 @@
 			$els.on( 'touchstart.hl', function( e ) {
 				$el = $(this);
 				$el.attr( 'hl-cls', className );
+				clearTimeout( timer );
 				timer = setTimeout( function() {
 					$el.addClass( className );
 				}, 100 );
