@@ -4,6 +4,8 @@
 
 ##ATTR属性
 
+* beforeShowDay {Function} [可选] [默认值: (date)->{return true}] 判断Date是否Selectable
+
 * date {Date, String} [可选] [默认值：null] 初始化日期，默认今天
 
 * firstDay {Number} [可选] [默认值：1] 设置新的一周从星期几开始，星期天用0表示, 星期一用1表示, 以此类推.
