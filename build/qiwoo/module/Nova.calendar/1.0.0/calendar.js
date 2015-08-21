@@ -399,7 +399,7 @@ Widget = Widget || this.Widget;
             var otherMonth = (printDate.getMonth() !== drawMonth),
                 unSelectable;
 
-            unSelectable = !beforeShowDay() || otherMonth || (minDate && printDate < minDate) || (maxDate && printDate > maxDate);
+            unSelectable = !beforeShowDay(printDate) || otherMonth || (minDate && printDate < minDate) || (maxDate && printDate > maxDate);
 
             return "<td class='" + ((j + firstDay + 6) % 7 >= 5 ? "ui-calendar-week-end" : "") + // 标记周末
 
